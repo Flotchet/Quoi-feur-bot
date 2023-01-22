@@ -31,13 +31,17 @@ def take_command():
                 engine.runAndWait()
 
             if 'naire' or 'binaire'in command:
+                engine.say("veu")
+                engine.runAndWait()
+
+            if 'veu' or 'voeux' or 'nerveux' in command:
                 engine.say("nir")
                 engine.runAndWait()
 
-            if 'nir' in command:
+            if 'nir' or 'venir' in command:
                 engine.say("vana")
                 engine.runAndWait()
-                
+
     except:
         pass
     return command
